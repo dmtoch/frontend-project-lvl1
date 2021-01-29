@@ -4,6 +4,9 @@
   "description": "Hexlet Brain Games - set of 5 console games to train you brain!",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
