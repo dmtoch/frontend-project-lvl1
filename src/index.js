@@ -3,6 +3,7 @@ import getName from './cli.js';
 import even from './games/even.js';
 import calc from './games/calc.js';
 import gcd from './games/gcd.js';
+import progression from './games/progression.js';
 
 const getAnswer = () => {
   const answer = readlineSync.question('Your answer: ');
@@ -20,6 +21,9 @@ const game = (type) => {
       break;
     case 'gcd':
       gameObj = gcd();
+      break;
+    case 'progression':
+      gameObj = progression();
       break;
     default:
       break;
