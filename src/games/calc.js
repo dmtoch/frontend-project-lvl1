@@ -1,6 +1,6 @@
 import getRandomNumber from '../helpers.js';
 
-const operations = ['+', '-', '*'];
+const operators = ['+', '-', '*'];
 
 const evaluate = ([operand1, operand2, operation]) => {
   let result;
@@ -27,8 +27,8 @@ const calc = () => {
   for (let i = 0; i < 3; i += 1) {
     const operand1 = getRandomNumber();
     const operand2 = getRandomNumber();
-    const operation = operations[getRandomNumber(3)];
-    const expression = [operand1, operand2, operation];
+    const operator = operators[getRandomNumber(3)];
+    const expression = [operand1, operand2, operator];
     const result = evaluate(expression);
     expression.push(result);
     expressions.push(expression);
