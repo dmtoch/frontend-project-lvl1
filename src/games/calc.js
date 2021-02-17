@@ -1,4 +1,5 @@
-const getRandomNumber = (multiplier = 100) => Math.floor(Math.random() * multiplier);
+import getRandomNumber from '../helpers.js';
+
 const operations = ['+', '-', '*'];
 
 const evaluate = ([operand1, operand2, operation]) => {

@@ -1,4 +1,5 @@
-const getRandomNumber = () => Math.floor(Math.random() * 1000);
+import getRandomNumber from '../helpers.js';
+
 const isEven = (num) => num % 2 === 0;
 
 const even = () => {
