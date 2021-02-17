@@ -4,6 +4,7 @@ import even from './games/even.js';
 import calc from './games/calc.js';
 import gcd from './games/gcd.js';
 import progression from './games/progression.js';
+import prime from './games/prime.js';
 
 const getAnswer = () => {
   const answer = readlineSync.question('Your answer: ');
@@ -24,6 +25,9 @@ const game = (type) => {
       break;
     case 'progression':
       gameObj = progression();
+      break;
+    case 'prime':
+      gameObj = prime();
       break;
     default:
       break;
